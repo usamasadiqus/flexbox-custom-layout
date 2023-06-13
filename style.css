@@ -30,8 +30,8 @@ body {
   flex-direction: column;
 }
 
-body > :not(script) {
-  height: 5em;
+body > :not(main):not(script) {
+  height: 6em;
   padding: 0 2em;
   display: flex;
   justify-content: space-between;
@@ -63,9 +63,33 @@ header > nav > ul {
 
 /* End Header */
 
-/* Footer */
+/* Main */
 
-footer {
+main {
+  border: 1px solid #000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* End Footer */
+main p {
+  font-size: 1.5em;
+}
+
+main > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > aside {
+  width: 16em;
+  background-color: cornflowerblue;
+}
+
+main > article {
+  flex-grow: 2;
+}
+
+/* End Main */

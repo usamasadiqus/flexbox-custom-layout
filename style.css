@@ -30,7 +30,8 @@ body {
   flex-direction: column;
 }
 
-body > :not(main):not(script) {
+body > header,
+body > footer {
   height: 6em;
   padding: 0 2em;
   display: flex;
@@ -43,7 +44,8 @@ body > :not(main):not(script) {
 
 /* Header */
 
-header > * {
+header > .logo,
+header > nav {
   height: 100%;
   display: flex;
   align-items: center;
@@ -76,7 +78,8 @@ main p {
   font-size: 1.5em;
 }
 
-main > * {
+main > aside,
+main > article {
   display: flex;
   justify-content: center;
   align-items: center;

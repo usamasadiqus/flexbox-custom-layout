@@ -69,7 +69,7 @@ header > nav > ul {
 
 main {
   height: 100%;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   flex-wrap: wrap;
 }
